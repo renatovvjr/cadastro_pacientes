@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Função para salvar os dados do paciente
+# Função para salvar os dados do paciente!
 def salvar_paciente():
     nome = entry_nome.get()
     idade = entry_idade.get()
@@ -16,11 +16,11 @@ def salvar_paciente():
         return
 
     idade = int(idade)
-    paciente_info = f"Nome: {nome}, Idade: {idade}, Endereço: {endereco}"
+    paciente_info = f"Nome do Paciente: {nome}, Idade do Paciente: {idade}, Endereço do Paciente: {endereco}"
     listbox_pacientes.insert(tk.END, paciente_info)
     limpar_campos()
 
-# Função para limpar os campos de entrada
+# Função para limpar os campos de entrada!
 def limpar_campos():
     entry_nome.delete(0, tk.END)
     entry_idade.delete(0, tk.END)
